@@ -1,0 +1,499 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="msvalidate.01" content="1660BC949A8C199691E9EA715809092F" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sportsurge offers free live streaming of major sports events, including NFL, NBA, UFC, and more, with seamless access across all devices.">
+  <meta name="keywords" content="Sportsurge provides high-quality, free live streaming of top sports events, including NFL, NBA, UFC, and more, accessible on all devices.">
+  <meta name="robots" content="index, follow">
+  <title>SportSurge V3: WATCH LIVE NBA NHL NFL MMA & MORE</title>
+  <style>
+   body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: oklch(0.277 0.046 192.524);
+}
+
+.header {
+  background-color: oklch(0.386 0.063 188.416);
+  text-align: center;
+  color: #39FF14;
+  padding: 20px;
+ border-bottom: 2px solid oklch(0.145 0 0);
+
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 40px;
+}
+
+.sub-header {
+  font-size: 12px;
+  margin-top: 5px;
+  line-height: 1.5;
+  text-align: center;
+  color: white;
+}
+
+.sub-header span {
+  display: block;
+}
+
+.post-icons {
+  display: none;
+}
+
+.main-content {
+  background-color: oklch(0.386 0.063 188.416);
+  padding: 30px;
+  margin: 20px auto;
+  width: 90%; /* Adjust for mobile responsiveness */
+  max-width: 650px; /* Maximum width for larger screens */
+  border-radius: 0px;
+  border: 1px solid oklch(0.145 0 0);
+}
+
+.stream-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: oklch(0.437 0.078 188.216);
+  padding: 15px;
+  border-radius: 0px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid oklch(0.145 0 0);
+  width: 620px; /* Full width on mobile */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.stream-box:hover {
+  background-color: oklch(0.511 0.096 186.391);
+  transform: translateY(-10px);
+}
+
+.stream-left {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.stream-right {
+  display: flex;
+  align-items: center;
+}
+
+.stream-right svg {
+  margin-left: 5px;
+}
+
+.stream-right .text-green-500 {
+  color: #39FF14;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.welcome-box {
+  background-color: oklch(0.437 0.078 188.216);
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid oklch(0.145 0 0);
+  border-radius: 0px;
+  color: white;
+  text-align: center;
+  width: 100%; /* Full width on mobile */
+  max-width: 580px;
+  margin: 20px auto;
+}
+
+.welcome-box h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.welcome-box p {
+  font-size: 16px;
+  color: #39FF14; /* Neon Green */
+}
+
+.article {
+  background-color: oklch(0.437 0.078 188.216);
+  padding: 30px;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 580px;
+  color: white;
+  border: 1px solid oklch(0.145 0 0);
+}
+
+.article h1, .article h2 {
+  color: #39FF14; /* Neon Green */
+}
+
+.article h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.article h2 {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.article p, .article li {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.article ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.article-section {
+  margin-bottom: 30px;
+}
+
+.visit-box {
+  background-color: oklch(0.386 0.063 188.416);
+  padding: 10px;
+  margin-top: 15px;
+  text-align: center;
+  color: #39FF14;
+  width: 80%;
+  max-width: 250px;
+  margin: 0 auto;
+  border: 1px solid oklch(0.145 0 0);
+}
+
+.visit-box p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.visit-box-link {
+  text-decoration: none;
+}
+
+.visit-box:hover {
+  background-color: oklch(0.511 0.096 186.391);
+}
+
+.footer {
+  background-color: oklch(0.437 0.078 188.216);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  border: 1px solid oklch(0.145 0 0);
+  font-size: 14px;
+  width: 100%;
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer:hover {
+  background-color: oklch(0.511 0.096 186.391);
+}
+    
+
+/* Mobile Layout Adjustments */
+@media screen and (max-width: 768px) {
+  /* Main Content Box */
+  .main-content {
+    width: 100%; /* Ensure it's full width on mobile */
+    padding: 10px; /* Adjust padding */
+    margin: 10px 0; /* Adjust margin */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+
+  /* Stream Box */
+  .stream-box {
+    width: 100%; /* Full width */
+    padding: 15px; /* Adjust padding for mobile */
+    margin-bottom: 10px; /* Space between stream boxes */
+    border-radius: 5px; /* Round corners for a clean look */
+    border: 1px solid #444; /* Ensure border is visible */
+    box-sizing: border-box; /* Include padding in width calculation */
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  /* Visit Box and Welcome Box */
+  .visit-box, .welcome-box {
+    width: 100%; /* Ensure full width */
+    margin: 10px 0; /* Add space between boxes */
+    padding: 15px; /* Adjust padding */
+    border: 1px solid #444; /* Border for consistency */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+
+  /* Article Section */
+  .article {
+    width: 100%; /* Full width for articles */
+    padding: 15px;
+    border: 1px solid #444; /* Border around article */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+
+  .article-section h1, .article-section h2 {
+    font-size: 20px; /* Adjust heading size for mobile */
+    margin-bottom: 15px;
+  }
+
+  .article-section p, .article-section ul {
+    font-size: 16px; /* Adjust paragraph size */
+  }
+
+  .article-section ul {
+    margin-left: 20px;
+  }
+
+  /* Footer */
+  .footer {
+    width: 100%; /* Full width for footer */
+    padding: 15px;
+    margin: 0;
+    border-top: 2px solid #444; /* Border for footer */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h2>SPORTSURGE</h2>
+  </div>
+
+  <p class="main-title" style="text-align: center; color: white;">SportSurge V3: WATCH LIVE NBA NHL NFL MMA & MORE
+</p>
+  
+  <p class="sub-header">
+  <span>Sportsurge is a top platform for live sports streaming, offering premium coverage of NFL, NBA,</span>
+<span>MLB, NHL, and many other sports. Experience seamless, uninterrupted access, full compatibility across all devices, and a broad selection of</span>
+<span>sports, making it your ultimate destination for nonstop live sports action.</span>
+
+
+  </p>
+
+ <!-- New Small Box Below Sub-header -->
+<a href="https://v2.sportsonline.pro/" class="visit-box-link">
+  <div class="visit-box">
+    <p>WELCOME TO SPORTSURGE</p>
+  </div>
+</a>
+
+  <div class="main-content">
+    <a href="https://v2.sportsonline.pro/" class="stream-box">
+      <div class="stream-left">SPORTSURGE - HOME</div>
+      <div class="stream-right">
+        <span class="text-green-500">● 4K TV</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+          <path d="M11 13l9 -9" />
+          <path d="M15 4h5v5" />
+        </svg>
+      </div>
+    </a>
+
+    <a href="https://v2.sportsonline.pro/p/nflsports.html" class="stream-box">
+      <div class="stream-left">SPORTSURGE - NFL</div>
+      <div class="stream-right">
+        <span class="text-green-500">●4K TV</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+          <path d="M11 13l9 -9" />
+          <path d="M15 4h5v5" />
+        </svg>
+      </div>
+    </a>
+
+    
+    
+     <a href="https://v2.sportsonline.pro/p/nbasports.html" class="stream-box">
+      <div class="stream-left">SPORTSURGE - NBA</div>
+      <div class="stream-right">
+        <span class="text-green-500">● 4K TV</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+          <path d="M11 13l9 -9" />
+          <path d="M15 4h5v5" />
+        </svg>
+      </div>
+    </a>
+
+    
+    
+    
+    
+     <a href="https://v2.sportsonline.pro/p/mmasports.html" class="stream-box">
+      <div class="stream-left">SPORTSURGE - MMA/UFC</div>
+      <div class="stream-right">
+        <span class="text-green-500">● 4K TV</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+          <path d="M11 13l9 -9" />
+          <path d="M15 4h5v5" />
+        </svg>
+      </div>
+    </a>
+
+    
+    
+    
+    
+     <a href="https://v2.sportsonline.pro/p/boxingsports.html" class="stream-box">
+      <div class="stream-left">SPORTSURGE - BOXING</div>
+      <div class="stream-right">
+        <span class="text-green-500">● 4K TV</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+          <path d="M11 13l9 -9" />
+          <path d="M15 4h5v5" />
+        </svg>
+      </div>
+    </a>
+
+    <div class="welcome-box">
+      <h2>Welcome to Sportsurge 3.0</h2> <p>Sportsurge provides free live streams of top sports events, including Soccer, UFC, Boxing, WWE, NFL, and more! Just select the event you want to watch and click play to dive into the action.</p>
+    </div>
+
+    <div class="article">
+   <h1>SportSurge V3: The Ultimate Free Sports Streaming Platform</h1>
+<p>
+  <strong>SportSurge V3</strong> offers smooth, high-definition live sports
+  streaming for enthusiasts around the globe. Watch your favorite games
+  without the need for sign-ups or hidden fees.
+</p>
+
+<h2>Enjoy Sports in Brilliant HD</h2>
+<p>
+  Relish every moment in stunning HD quality. From NFL, NBA, and UFC to
+  soccer, MLB, and boxing, SportSurge V3 brings you the ultimate sports viewing
+  experience.
+</p>
+
+<h2>Why Choose SportSurge V3?</h2>
+<p>
+  With exceptional video quality, user-friendly navigation, and quick access,
+  SportSurge V3 is the perfect platform for streaming sports at no cost.
+</p>
+
+<h2>Key Features</h2>
+  <li>
+    <strong>Free Streaming:</strong> No subscriptions, no hidden fees.
+  </li>
+  <li>
+    <strong>HD Quality:</strong> Watch sports in high-definition clarity.
+  </li>
+  <li>
+    <strong>Vast Selection:</strong> From NFL to boxing, there's something for
+    every fan.
+  </li>
+  <li><strong>Instant Access:</strong> No need for registration—just click and
+    watch.
+  </li>
+  <li>
+    <strong>Customizable Playback:</strong> Adjust video quality based on your
+    connection speed.
+  </li>
+  <li>
+    <strong>Intuitive Interface:</strong> Seamlessly navigate for a top-notch
+    experience.
+  </li>
+
+<h2>Popular Sports to Watch</h2>
+  <li>
+    <strong>NFL:</strong> Watch live games, playoffs, and the Super Bowl.
+  </li>
+  <li>
+    <strong>NBA:</strong> Full coverage from regular season to playoffs.
+  </li>
+  <li><strong>UFC:</strong> Watch live fights and championship bouts.</li>
+  <li>
+    <strong>Soccer:</strong> Coverage of Premier Leagues, World Cup, and more.
+  </li>
+  <li>
+    <strong>MLB:</strong> Watch regular season games and World Series action.
+  </li>
+  <li><strong>Motorsports:</strong> F1, MotoGP, NASCAR, and more.</li>
+  <li>
+    <strong>Boxing:</strong> Enjoy thrilling live boxing events and title matches.
+  </li>
+
+<h2>How to Get Started</h2>
+<p>
+  Visit SportSurge V3, choose your sport, pick the event, and start watching—no
+  sign-up needed. Enjoy sports instantly!
+</p>
+
+<h2>Streaming Tips</h2>
+<p>
+  For the best experience, ensure your internet connection is stable. If you
+  experience buffering, try refreshing the page, switching links, or lowering
+  the video quality.
+</p>
+
+<h2>Other Popular Streaming Options</h2>
+  <li>
+    <strong>Reddit Streams:</strong> Community-shared live sports links.
+  </li>
+  <li>
+    <strong>Stream2Watch:</strong> A wide variety of live sports streams.
+  </li>
+  <li>
+    <strong>VIPRow Sports:</strong> Premium streams for major sports events.
+  </li>
+  <li>
+    <strong>SportSurge V3:</strong> Your reliable free HD sports streaming
+    destination.
+  </li>
+
+<h2>Frequently Asked Questions</h2>
+  <li>
+    <strong>Is SportSurge V3 Legal?</strong> The legality of streaming depends on
+    your location. Please verify the laws in your area.
+  </li>
+  <li>
+    <strong>Do I Need to Register?</strong> No registration required. Just
+    start watching immediately.
+  </li>
+  <li>
+    <strong>What Sports Are Available?</strong> You can stream NFL, NBA, UFC,
+    soccer, boxing, motorsports, and more.
+  </li>
+  <li>
+    <strong>How Can I Improve Stream Quality?</strong> Ensure a stable internet
+    connection, refresh the page, or adjust the video settings.
+  </li>
+
+<p>
+  Enhance your sports-watching experience with SportSurge V3. Enjoy the best in
+  free, high-quality streaming and endless entertainment!
+</p>
+
+      </div>
+    <!-- Footer Section -->
+<div class="footer">
+  <p>© 2025 SportSurge. All Rights Reserved.</p>
+</div>
+ </div>
+</body>
+</html>
